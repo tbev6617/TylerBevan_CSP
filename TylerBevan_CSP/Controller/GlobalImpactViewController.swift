@@ -16,6 +16,8 @@ class GlobalImpactViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        waterImage.image = UIImage(named: "clean water")
+        planImage.image = UIImage(named: "plan")
         
     }
 

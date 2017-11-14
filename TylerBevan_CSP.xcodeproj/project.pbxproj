@@ -19,6 +19,7 @@
 		080AD6E91FA223BF0095CED9 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080AD6E81FA223BF0095CED9 /* InternetViewController.swift */; };
 		080AD6EB1FA223D00095CED9 /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080AD6EA1FA223D00095CED9 /* ProgrammingViewController.swift */; };
 		080AD6ED1FA223ED0095CED9 /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080AD6EC1FA223ED0095CED9 /* GlobalImpactViewController.swift */; };
+		08FB41A01FBB3988006F8568 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FB419F1FBB3988006F8568 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		080AD6E81FA223BF0095CED9 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
 		080AD6EA1FA223D00095CED9 /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
 		080AD6EC1FA223ED0095CED9 /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
+		08FB419F1FBB3988006F8568 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		080AD6BE1FA220210095CED9 = {
 			isa = PBXGroup;
 			children = (
+				08FB419F1FBB3988006F8568 /* Default-568h@2x.png */,
 				080AD6C91FA220210095CED9 /* TylerBevan_CSP */,
 				080AD6C81FA220210095CED9 /* Products */,
 			);
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				080AD6D51FA220210095CED9 /* LaunchScreen.storyboard in Resources */,
+				08FB41A01FBB3988006F8568 /* Default-568h@2x.png in Resources */,
 				080AD6D21FA220210095CED9 /* Assets.xcassets in Resources */,
 				080AD6D01FA220210095CED9 /* Main.storyboard in Resources */,
 			);
@@ -335,7 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TylerBevan_CSP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TylerBevan_CSP/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CTEC.TylerBevan-CSP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,7 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TylerBevan_CSP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TylerBevan_CSP/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CTEC.TylerBevan-CSP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
