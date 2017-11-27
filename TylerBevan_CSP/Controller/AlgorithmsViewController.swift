@@ -17,7 +17,8 @@ class AlgorithmsViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        codeImage.image = UIImage(named : "sampleJavaCode")
+        setupAlgorithm()
         // Do any additional setup after loading the view.
     }
 
@@ -25,7 +26,6 @@ class AlgorithmsViewController: UIViewController
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        codeImage.image = UIImage(named : "sampleJaveImage")
     }
     
 
@@ -46,6 +46,7 @@ class AlgorithmsViewController: UIViewController
         
         let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
         let fullAttributedString = NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
+        
         
         for step in algorithmSteps
         {
