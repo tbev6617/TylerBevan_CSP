@@ -40,7 +40,7 @@ class InternetMasterViewController: UITableViewController
     
     override public func numberOfSections(in tableView: UITableView) -> Int
     {
-        // #warning
+        // #warning incomplete implementation, return number of sections
         return 1;
     }
     

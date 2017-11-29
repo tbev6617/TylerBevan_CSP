@@ -147,31 +147,54 @@
             </objects>
             <point key="canvasLocation" x="-175" y="120"/>
         </scene>
-        <!--View Controller-->
+        <!--Internet Detail View Controller-->
         <scene sceneID="tUK-2S-MxT">
             <objects>
-                <viewController id="8A4-8S-qtF" sceneMemberID="viewController">
+                <viewController id="8A4-8S-qtF" customClass="InternetDetailViewController" customModule="TylerBevan_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xDU-fs-ixI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1h-3p-wEm">
+                                <rect key="frame" x="67" y="104" width="217" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oeh-co-0G9">
+                                <rect key="frame" x="67" y="414" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="zew-xr-HVP"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="H1h-3p-wEm" id="V8c-rz-zLC"/>
+                        <outlet property="webView" destination="Oeh-co-0G9" id="Fe8-aj-Jqp"/>
+                        <outlet property="webViewer" destination="Oeh-co-0G9" id="kwV-bX-A4b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xSm-5u-Y5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2825" y="504"/>
+            <point key="canvasLocation" x="2824.8000000000002" y="503.29835082458777"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="Zdp-3q-hKf">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="OSl-l1-Cdk" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="OSl-l1-Cdk" customClass="InternetMasterViewController" customModule="TylerBevan_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cIp-sW-ORM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JOY-A3-Lg5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="JOY-A3-Lg5">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JOY-A3-Lg5" id="8PA-8X-Nl6">

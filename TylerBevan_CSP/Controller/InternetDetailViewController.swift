@@ -12,6 +12,8 @@ import WebKit
 public class InternetDetailViewController: UIViewController
 {
     //MARK: Add GUI controls
+    @IBOutlet weak var textView: UILabel!
+    @IBOutlet weak var webViewer: WKWebView!
     
     override public func viewDidLoad()
     {
