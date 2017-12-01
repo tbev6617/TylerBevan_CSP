@@ -183,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xSm-5u-Y5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2824.8000000000002" y="503.29835082458777"/>
+            <point key="canvasLocation" x="2825" y="664"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="Zdp-3q-hKf">
@@ -201,6 +201,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8A4-8S-qtF" kind="showDetail" identifier="showDetail" id="kxG-vR-anz"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -404,4 +407,7 @@
         <image name="Photo on 11-10-17 at 9.33 AM (1)" width="1080" height="720"/>
         <image name="clean water" width="1555" height="1036"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="kxG-vR-anz"/>
+    </inferredMetricsTieBreakers>
 </document>
