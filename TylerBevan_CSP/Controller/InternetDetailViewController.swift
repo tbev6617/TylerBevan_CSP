@@ -50,7 +50,7 @@ public class InternetDetailViewController: UIViewController
         {
             if let currentWebView = webViewer
             {
-                let currentURL = URL(string: "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+                let currentURL = URL(string: "https://www.google.com")
                 currentWebView.load(URLRequest(url: currentURL!))
             }
         }

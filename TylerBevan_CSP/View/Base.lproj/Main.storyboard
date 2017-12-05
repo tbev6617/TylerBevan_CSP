@@ -131,13 +131,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dj-KO-Jba">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <rect key="frame" x="164" y="594" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="ByU-rc-gMb" kind="show" id="pr3-vt-Kp5"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZD-HK-lZw" customClass="DrawingView" customModule="TylerBevan_CSP" customModuleProvider="target">
+                                <rect key="frame" x="16" y="52" width="343" height="501"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -145,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-175" y="120"/>
+            <point key="canvasLocation" x="-175.19999999999999" y="119.1904047976012"/>
         </scene>
         <!--Internet Detail View Controller-->
         <scene sceneID="tUK-2S-MxT">
@@ -177,7 +182,6 @@
                     </view>
                     <connections>
                         <outlet property="textView" destination="H1h-3p-wEm" id="V8c-rz-zLC"/>
-                        <outlet property="webView" destination="Oeh-co-0G9" id="Fe8-aj-Jqp"/>
                         <outlet property="webViewer" destination="Oeh-co-0G9" id="kwV-bX-A4b"/>
                     </connections>
                 </viewController>
@@ -408,6 +412,6 @@
         <image name="clean water" width="1555" height="1036"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kxG-vR-anz"/>
+        <segue reference="Y1s-tT-65B"/>
     </inferredMetricsTieBreakers>
 </document>
