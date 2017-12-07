@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0808F46D1FD99C7F00869679 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0808F46C1FD99C7F00869679 /* ArtCell.swift */; };
 		080AD6CB1FA220210095CED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080AD6CA1FA220210095CED9 /* AppDelegate.swift */; };
 		080AD6CD1FA220210095CED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080AD6CC1FA220210095CED9 /* ViewController.swift */; };
 		080AD6D01FA220210095CED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080AD6CE1FA220210095CED9 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0808F46C1FD99C7F00869679 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		080AD6C71FA220210095CED9 /* TylerBevan_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TylerBevan_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		080AD6CA1FA220210095CED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		080AD6CC1FA220210095CED9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				080AD6E81FA223BF0095CED9 /* InternetMasterViewController.swift */,
 				081C624A1FCF003F00257EB3 /* InternetDetailViewController.swift */,
 				080AD6EC1FA223ED0095CED9 /* GlobalImpactViewController.swift */,
+				0808F46C1FD99C7F00869679 /* ArtCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				080AD6CD1FA220210095CED9 /* ViewController.swift in Sources */,
+				0808F46D1FD99C7F00869679 /* ArtCell.swift in Sources */,
 				080AD6CB1FA220210095CED9 /* AppDelegate.swift in Sources */,
 				080AD6E51FA223910095CED9 /* DataViewController.swift in Sources */,
 				08A017C31FC32A48009DC716 /* Winnable.swift in Sources */,
