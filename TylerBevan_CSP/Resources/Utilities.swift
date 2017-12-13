@@ -10,7 +10,6 @@ import Foundation
 
 var gameLevel : Int = 1
 
-
 struct CollisionCategories
 {
     static let Invader : UInt32 = 0x1 << 0

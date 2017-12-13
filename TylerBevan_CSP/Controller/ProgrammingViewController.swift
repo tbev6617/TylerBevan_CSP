@@ -22,7 +22,7 @@ public class ProgrammingViewController: UIViewController
         gameView.showsNodeCount = true
         gameView.ignoresSiblingOrder = true
         
-        gameScene.scaleMode = .resizeView()
+        gameScene.scaleMode = .resizeFill
         gameView.presentScene(gameScene)
     }
 
