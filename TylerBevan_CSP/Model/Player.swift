@@ -54,7 +54,7 @@ public class Player: SKSpriteNode
     private func animate() -> Void
     {
         var playerTextures:[SKTexture] = []
-        for i in 1...3
+        for i in 1...6
         {
             playerTextures.append(SKTexture(imageNamed: "x wing\(i)"))
         }
@@ -87,7 +87,7 @@ public class Player: SKSpriteNode
         let moveBulletAction = SKAction.move(to: CGPoint(x: self.position.x, y: scene.size.height + bullet.size.height), duration: 1.0)
         let removeBulletAction = SKAction.removeFromParent()
         bullet.run(SKAction.sequence([moveBulletAction, removeBulletAction]))
-        let waitToEnableFire = SKAction.wait(forDuration: 0.5)
+        let waitToEnableFire = SKAction.wait(forDuration: 1)
         run(waitToEnableFire, completion:
         {
             self.canFire = true
