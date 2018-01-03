@@ -64,17 +64,17 @@ public class Player: SKSpriteNode
     
     public func die () -> Void
     {
-        
+        //TODO
     }
     
     public func kill() -> Void
     {
-    
+        //TODO
     }
     
     public func respawn() -> Void
     {
-        
+        //TODO
     }
     
     public func fireBullet(scene: SKScene) -> Void
