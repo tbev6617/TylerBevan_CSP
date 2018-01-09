@@ -65,7 +65,7 @@ public class InternetDetailViewController: UIViewController
         {
             if let currentText = textView
             {
-                currentText.text = "Title"
+                currentText.text = "Internet"
             }
         }
     }
