@@ -132,17 +132,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wLF-7E-iHi">
-                            <size key="itemSize" width="250" height="300"/>
+                            <size key="itemSize" width="294" height="534"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artIdentifier" id="SVH-I5-oCG" customClass="ArtCell" customModule="TylerBevan_CSP" customModuleProvider="target">
-                                <rect key="frame" x="82" y="0.0" width="250" height="300"/>
+                                <rect key="frame" x="60" y="0.0" width="294" height="534"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="294" height="534"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIc-se-Ql6">
@@ -167,7 +167,6 @@
                                     <constraint firstItem="4Ee-hg-gvV" firstAttribute="leading" secondItem="cIc-se-Ql6" secondAttribute="leading" id="LKN-lR-2yO"/>
                                     <constraint firstItem="cIc-se-Ql6" firstAttribute="top" secondItem="4Ee-hg-gvV" secondAttribute="bottom" constant="11" id="Lv6-gs-mj8"/>
                                     <constraint firstAttribute="trailing" secondItem="4Ee-hg-gvV" secondAttribute="trailing" id="QuI-RC-P1x"/>
-                                    <constraint firstItem="4Ee-hg-gvV" firstAttribute="top" secondItem="SVH-I5-oCG" secondAttribute="top" id="SdZ-96-4BP"/>
                                     <constraint firstItem="4Ee-hg-gvV" firstAttribute="top" secondItem="SVH-I5-oCG" secondAttribute="top" constant="9" id="XBB-nf-r5L"/>
                                     <constraint firstItem="4Ee-hg-gvV" firstAttribute="trailing" secondItem="cIc-se-Ql6" secondAttribute="trailing" id="c2P-G4-ngp"/>
                                     <constraint firstItem="4Ee-hg-gvV" firstAttribute="top" secondItem="SVH-I5-oCG" secondAttribute="top" constant="9" id="ckk-ok-zeh"/>
@@ -204,7 +203,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="BqW-yt-UoQ" customClass="BucketItemCell" customModule="TylerBevan_CSP" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataIdentifier" rowHeight="58" id="BqW-yt-UoQ" customClass="BucketItemCell" customModule="TylerBevan_CSP" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="58"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BqW-yt-UoQ" id="bk8-f5-MWD">
@@ -219,14 +218,14 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bucket items here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxN-Dg-w5v">
-                                            <rect key="frame" x="114" y="-21" width="324" height="46"/>
+                                            <rect key="frame" x="112" y="-3" width="286" height="46"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2S-9Q-HZD">
-                                            <rect key="frame" x="128" y="24" width="62" height="21"/>
+                                            <rect key="frame" x="112" y="28" width="62" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Author">
@@ -247,6 +246,11 @@
                             <outlet property="delegate" destination="3Jl-E0-Xoh" id="Gti-nl-nd7"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="bucketItemSignature" destination="k2S-9Q-HZD" id="Q2X-Qt-Teg"/>
+                        <outlet property="bucketItemSymbol" destination="06D-fE-7rZ" id="eKT-3I-tok"/>
+                        <outlet property="bucketItemText" destination="dxN-Dg-w5v" id="LYW-8q-qOh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOY-YL-OEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -265,7 +269,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="ByU-rc-gMb" kind="show" id="fbL-j4-ccB"/>
+                                    <segue destination="EUj-aL-Uo6" kind="show" id="eB5-5Y-NjT"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZD-HK-lZw" customClass="DrawingView" customModule="TylerBevan_CSP" customModuleProvider="target">
@@ -281,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1397.1014492753625" y="-315.48913043478262"/>
+            <point key="canvasLocation" x="-1749" y="-359"/>
         </scene>
         <!--Programming View Controller-->
         <scene sceneID="gFl-PT-YE0">
@@ -565,7 +569,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGY-j2-e3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1396" y="497"/>
+            <point key="canvasLocation" x="-1749" y="497"/>
         </scene>
     </scenes>
     <resources>
