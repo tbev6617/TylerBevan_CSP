@@ -62,7 +62,14 @@ class DataViewController: UITableViewController
         return bucketList.count
     }
     
-    //TODO step 4C override public func tableView()
+    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let currentCell = tableView.dequeueReusableCell(withIdentifier: "dataIdentifier", for: indexPath) as! BucketItemCell
+        
+        currentCell.bucketItem = bucketList[indexPath.row]
+        
+        return currentCell
+    }
     
     private func randomEmoji() -> String
     {
@@ -74,9 +81,9 @@ class DataViewController: UITableViewController
         let emojiRange = 79
         let symbolRange = 70
         
-        let ascii = emojiStart + Int(arc4random_uniform(UIInt32(emojiRange)))
+        let ascii = emojiStart + Int(arc4random_uniform(UInt32(emojiRange)))
         let emoji = UnicodeScalar(ascii)?.description
-        return emoji
+        return emoji!
     }
     
     private func updateCellView() -> Void
@@ -91,27 +98,13 @@ class DataViewController: UITableViewController
             bucketItemSignature.text = "author goes here"
             bucketItemText.text = "text goes here"
         }
-        bucketItemSymbol.text = randomEmojiSymbol()
+        bucketItemSymbol.text = randomEmoji()
     }
     
-    public override func awakeFromNib()
-    {
-        super.awakeFromNib()
-    }
-    
-    public override func setSelected(_ selected : Bool, animated : Bool)
-    {
-        super.setSelected(selected, animated: animated)
-    }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-    }
-    
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
     }
 
 }
